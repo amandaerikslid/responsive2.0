@@ -23,6 +23,14 @@
     align-items: center;
 }
 
+#toggle-menu {
+    display: none;
+}
+/*
+#toggle-menu:checked ~ .navlinks {
+    display: block;
+}
+*/
 .logo {
     width: 100px;
     cursor: pointer;
@@ -170,7 +178,7 @@ nav ul li a:hover {
         object-fit: cover;
     }
 
-    .navlist {
+    .navlinks {
         display: none;
         position: absolute;
         top: 3.7rem;
@@ -179,6 +187,11 @@ nav ul li a:hover {
         background-color: var(--bgcolor);
         text-align: center;
     }
+
+    #toggle-menu:checked ~ .navlinks {
+        display: block;
+    }
+    
 
 }
 

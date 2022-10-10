@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Responsive Design 2</title>
 </head>
 
@@ -21,14 +21,18 @@
         <div class="navbar">
             <a href="/index.html"><img src="/images/Logo.2.svg" alt="Head Logo" class="logo"></a>
             <nav>
-                <ul id="navlist">
+                <ul class="navlinks">
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
-                <a id="menu-icon" class="menu-icon">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <input type="checkbox" id="toggle-menu">
+                <label class="menu-icon" for="toggle-menu">
+                    <a id="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </label>
+
             </nav>
         </div>
 
